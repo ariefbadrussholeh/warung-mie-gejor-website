@@ -11,19 +11,24 @@
 }
 
 .container{
-    border: 1px solid red;
     width: 80%;
     margin: 0 auto;
     padding: 1%;
 }
-.image-responsive{
+.img-responsive{
     width: 100%;
+}
+.img-curved{
+    border-radius: 10px;
 }
 .text-right{
     text-align: right;
 }
 .text-center{
     text-align: center;
+}
+.text-white{
+    color: white;
 }
 .clear-fix{
     clear: both;
@@ -49,10 +54,24 @@ a:hover{
 }
 .btn-primary:hover{
     background-color: #ff4757;
+    color: white;
 }
 h2{
     color: #2f3542;
+    margin-bottom: 1%;
 }
+h3{
+    font-size: 1.3rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 45px;
+    left: 36%;
+}
+
 
 /* CSS for Nav */
 nav .container{
@@ -66,9 +85,10 @@ nav .container{
 }
 .logo img{
     border-radius: 15px 0 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .menu{
-    min-width: 40%;
+    min-width: 30%;
 }
 .menu ul{
     list-style: none;
@@ -116,12 +136,92 @@ header input[type="search"]{
 .categories{
     padding: 4% 0;
 }
-.categories .container{
-    display: flex;
-    justify-content: space-around;
-}
 .box-2{
-    border: 1px solid black;
-    width: 30%;
+    width: 27%;
+    float: left;
+    margin: 3%;
 }
 /* CSS for Categories */
+
+/* CSS for menu-makanan */
+.food-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.food-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 5%;
+}
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+/* CSS for menu-makanan */
+
+/* CSS for Social */
+.social ul{
+    list-style: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+/* CSS for Social */
+
+
+/* CSS For Responsive */
+@media only screen and (max-width:768px){
+    nav .container{
+        display: block;
+        padding: 5% 0;
+    }
+    .logo{
+        width: 40%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    header{
+        padding: 10%;
+    }
+    header input[type="search"]{
+        width: 70%;
+    }
+    .categories{
+        padding: 10% 0;
+    }
+    .box-2{
+        width: 95%;
+        margin: 5% auto;
+    }
+    .food-menu{
+        padding: 10% 0;
+    }
+    .food-menu-box{
+        width: 95%;
+        margin: 5% auto;
+        padding: 5% 2%;
+    }
+    .social{
+        padding: 10% 0;
+    }
+    .footer{
+        padding: 10%;
+    }
+}
